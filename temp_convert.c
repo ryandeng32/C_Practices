@@ -1,16 +1,21 @@
 // print out a table converting Celsius to Fahrenheit
 #include <stdio.h>
 
+
+void convert_temp(int lower, upper, step); 
+
 int main(void)
+{
+	convert_temp(0, 300, 20); 
+	return 0; 
+}
+
+
+void convert_temp(int lower, upper, step)
 {
 	printf("Celsius to Fahrenheit\n"); 
 	printf("---------------------\n"); 
-	int lower, upper, step; 
 	float fahr, celsius; 
-
-	lower = 0; 
-	upper = 300;
-	step = 20; 
 
 	celsius = lower; 
 	while (celsius <= upper)
